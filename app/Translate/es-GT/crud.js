@@ -1,0 +1,28 @@
+module.exports =
+{
+    completed_successfully   : 'Completado exitosamente.',
+    saved_successfully       : 'Guardado exitosamente.',
+    edited_successfully      : 'Editado exitosamente.',
+    removed_successfully     : 'Eliminado exitosamente.',
+    recover_successfully     : 'Recuperado exitosamente.',
+    recover_error            : 'Ocurrió un error al intentar recuperar.',
+    saved_error              : 'Ocurrió un error al intentar guardar.',
+    edited_error             : 'Ocurrió un error al intentar editar.',
+    removed_error            : 'Ocurrió un error al intentar eliminar.',
+    is_removed               : 'Este elemento ha sido eliminado.',
+    is_missing               : 'Este elemento no se encuentra.',
+    is_exist                 : 'Este elemento ya existe.',
+    user_is_missing          : 'Este usuario no existe.',
+	role_is_missing          : 'Este cargo no existe.',
+	permission_is_missing    : 'Este permiso no existe.',
+	new_password_not_match	 : 'Las contraseñas no coinciden.',
+	current_password_not_match: 'Contraseña actual no coincide.',
+    password_successfully    : 'Contraseña actualizada exitosamente.',
+    avatar_successfully      : 'Foto de perfil actualizada exitosamente.',
+    email_already_use        : 'Este correo electrónico ya esta en uso.',
+	name_already_use         : 'Este nombre ya esta en uso.',
+    bad_credentials          : 'Credenciales incorrectas.',
+	cannot_removed_being_used: 'No puede ser eliminado por que esta siendo utilizado.',
+	assigned_charges		 : 'Cargos asignados exitosamente.',
+	assigned_users			 : 'Usuarios asignados exitosamente.'
+}
