@@ -57,7 +57,7 @@ class User extends Model {
 		return super.dates.concat(['birth_day'])
 	}
 
-	getBirth_day(birth_day)
+	getBirthDay(birth_day)
 	{
 		return birth_day.format('YYYY-MM-DD')
 	}

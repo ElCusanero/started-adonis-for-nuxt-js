@@ -2,7 +2,7 @@
 const Role = use('App/Models/Role')
 const Translate = use('App/Helpers/Translate')
 const Required = use('App/Helpers/Required')
-const Helpers = use('App/Helpers')
+const Helpers = use('App/Helpers/App')
 
 class RoleController
 {

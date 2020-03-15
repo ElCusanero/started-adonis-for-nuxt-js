@@ -1,7 +1,7 @@
 'use strict'
 const User = use('App/Models/User')
 const Role = use('App/Models/Role')
-const Helpers = use('App/Helpers')
+const Helpers = use('App/Helpers/App')
 const Required = use('App/Helpers/Required')
 const Translate = use('App/Helpers/Translate')
 

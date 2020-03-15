@@ -2,7 +2,7 @@
 
 /** @type {typeof import('@adonisjs/lucid/src/Lucid/Model')} */
 const Model = use('Model')
-const Helpers = use('App/Helpers')
+const Helpers = use('App/Helpers/App')
 
 class Role extends Model {
 

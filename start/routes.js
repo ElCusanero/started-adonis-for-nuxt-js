@@ -28,7 +28,7 @@ Route.post('/auth/users', 'AuthController.loginUsers')
 /*MY PROFILE*/
 Route.post('auth/users/me', 'AuthController.showUser').middleware('auth')
 /*FOR USER AUTH*/Route.group(() => {
-	Route.post('/users/change-avatar', 'uthController.changeAvatar')
+	Route.post('/users/change-avatar', 'AuthController.changeAvatar')
 	Route.put('/users/change-password', 'AuthController.changePassword')
 })
 .prefix('/:lang/auth')
@@ -100,4 +100,24 @@ Route.group(() => {
 
 })
 .prefix('/:lang/roles')
+.middleware(['auth', 'lang'])
+
+/*
+CONFIG
+ */
+Route.group(() => {
+	Route.get('/', 'ConfigController.show')
+		 .middleware('can: app_configs')
+
+	Route.put('/', 'ConfigController.update')
+ 		 .middleware('can: app_configs_edit')
+
+	Route.put('/property', 'ConfigController.property')
+	 	 .middleware('can: app_configs_edit')
+
+ 	Route.post('/change-avatar', 'ConfigController.changeAvatar')
+	 	 .middleware('can: app_configs_edit')
+
+})
+.prefix('/:lang/configs')
 .middleware(['auth', 'lang'])

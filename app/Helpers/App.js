@@ -32,6 +32,10 @@ class Index
 	{
 		return [
 			{
+				slug: 'index',
+				name: 'index'
+			},
+			{
 				slug: 'access_index',
 				name: 'access_index'
 			},
@@ -82,6 +86,14 @@ class Index
 			{
 				slug: 'roles_users',
 				name: 'roles_users'
+			},
+			{
+				slug: 'app_configs',
+				name: 'app_configs'
+			},
+			{
+				slug: 'app_configs_edit',
+				name: 'app_configs_edit'
 			}
 		]
 	}

@@ -19,6 +19,7 @@ module.exports =
 	current_password_not_match: 'Current password does not match.',
     password_successfully    : 'Password updated successfully.',
     avatar_successfully      : 'Profile photo successfully updated.',
+	logo_successfully        : 'Logo successfully updated.',
     email_already_use        : 'This email already in use.',
 	name_already_use         : 'This name already in use.',
     bad_credentials          : 'Bad credentials.',

@@ -2,7 +2,7 @@
 
 /** @type {import('@adonisjs/lucid/src/Schema')} */
 const Schema = use('Schema')
-const Helpers = use('App/Helpers')
+const Helpers = use('App/Helpers/App')
 class UserSchema extends Schema {
 	up() {
 		this.create('users', (table) => {

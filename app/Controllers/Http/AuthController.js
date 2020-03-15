@@ -2,7 +2,7 @@
 
 const Required = use('App/Helpers/Required')
 const Translate = use('App/Helpers/Translate')
-const HelperConfig = use('App/Helpers')
+const HelperConfig = use('App/Helpers/App')
 const User = use('App/Models/User')
 const Hash = use('Hash')
 

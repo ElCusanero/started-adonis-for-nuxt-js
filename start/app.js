@@ -62,7 +62,7 @@ const aliases = {
 |
 */
 const commands = [
-	'App/Commands/User'
+	'App/Commands/Config'
 ]
 
 module.exports = {

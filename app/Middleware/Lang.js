@@ -3,7 +3,7 @@
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
-const Helpers = use('App/Helpers')
+const Helpers = use('App/Helpers/App')
 const Translate = use('App/Helpers/Translate')
 
 class Lang {

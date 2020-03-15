@@ -1,9 +1,10 @@
 'use strict'
 const User = use('App/Models/User')
 const Role = use('App/Models/Role')
-const Helpers = use('App/Helpers')
+const Helpers = use('App/Helpers/App')
 const Required = use('App/Helpers/Required')
 const Translate = use('App/Helpers/Translate')
+const Moment = require('Moment')
 
 class UserController
 {
@@ -190,7 +191,6 @@ class UserController
 				message
 			})
 		}
-
 		user.merge(userInfo)
 		await user.save()
 		const message = {
