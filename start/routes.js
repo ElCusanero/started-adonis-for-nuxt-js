@@ -15,10 +15,13 @@
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
-
+const Env 	= use('Env')
 Route.get('/', () => {
-  return {
-greeting: 'Hello world in JSON', version: 1.0, routes: Route.list() }
+	return {
+		name: Env.get('APP_NAME'),
+		version: Env.get('APP_NAME'),
+		description: Env.get('APP_DESCRIPTION')
+	}
 })
 
 /*
