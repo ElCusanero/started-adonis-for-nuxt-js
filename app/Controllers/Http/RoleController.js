@@ -107,7 +107,7 @@ class RoleController
 		const role = new Role()
 		role.merge(roleInfo)
 		await role.save()
-
+		await role.permissions().attach(1)
 		const message = {
 			text: Translate.crud('saved_successfully', params.lang)
 		}
