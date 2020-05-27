@@ -19,7 +19,7 @@ const Env 	= use('Env')
 Route.get('/', () => {
 	return {
 		name: Env.get('APP_NAME'),
-		version: Env.get('APP_NAME'),
+		version: Env.get('APP_VERSION'),
 		description: Env.get('APP_DESCRIPTION')
 	}
 })
