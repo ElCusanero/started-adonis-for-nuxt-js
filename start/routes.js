@@ -16,21 +16,7 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 const Env 	= use('Env')
-Route.get('/', () => {
-	return {
-		app:
-		{
-			name: Env.get('APP_NAME'),
-			version: Env.get('APP_VERSION'),
-			description: Env.get('APP_DESCRIPTION')
-		},
-		company:
-		{
-			name: Env.get('COMPANY_NAME'),
-			slogan: Env.get('COMPANY_SLOGAN')
-		}
-	}
-})
+Route.get('/', 'IndexController.index')
 
 /*
 LOGIN
