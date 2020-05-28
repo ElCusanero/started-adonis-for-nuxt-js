@@ -18,6 +18,7 @@ const Route = use('Route')
 const Env 	= use('Env')
 Route.get('/', () => {
 	return {
+<<<<<<< HEAD
 		app:
 		{
 			name: Env.get('APP_NAME'),
@@ -29,6 +30,11 @@ Route.get('/', () => {
 			name: Env.get('COMPANY_NAME'),
 			slogan: Env.get('COMPANY_SLOGAN')
 		}
+=======
+		name: Env.get('APP_NAME'),
+		version: Env.get('APP_VERSION'),
+		description: Env.get('APP_DESCRIPTION')
+>>>>>>> abcae23f47c0c71a23e47e17a94b25298addf508
 	}
 })
 
